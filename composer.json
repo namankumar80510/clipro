@@ -1,6 +1,7 @@
 {
   "name": "dikki/clipro",
   "description": "A simple framework to build CLI applications with PHP",
+  "type": "project",
   "homepage": "https://github.com/namankumar80510/clipro",
   "config": {
     "sort-packages": true,
