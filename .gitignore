@@ -23,4 +23,5 @@ build/
 indexingsecret.json
 subscribers.csv
 tmp/
+composer.lock
 app.phar
