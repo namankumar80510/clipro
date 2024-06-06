@@ -24,16 +24,3 @@ function lang(string $text, string $lang): mixed
 {
     return config('lang.text.' . $lang)[strtolower($text)] ?? $text;
 }
-
-/**
- * @return void
- */
-function createConfigFile(): void
-{
-
-    FileSystem::write(CWD . 'config.neon', <<<NEON
-app:
-    name: PHP CLI
-    version: 0.0.1
-NEON);
-}

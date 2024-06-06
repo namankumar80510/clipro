@@ -2,6 +2,7 @@
 <?php
 
 use App\Bootstrap;
+use Nette\Utils\FileSystem;
 use Nette\Utils\Finder;
 
 if (php_sapi_name() !== 'cli') {
@@ -18,7 +19,12 @@ require_once ROOT_DIR . 'vendor/autoload.php';
 
 // config file
 if (!file_exists(CWD . 'config.neon')) {
-    createConfigFile();
+    FileSystem::write(getcwd() . '/config.neon', <<<NEON
+app:
+    name: CliPro
+    version: 0.0.1
+NEON
+    );
 }
 
 // console application
