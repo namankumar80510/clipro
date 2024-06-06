@@ -1,0 +1,18 @@
+{
+  "config": {
+    "sort-packages": true,
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    },
+    "files": [
+      "src/Functions.php"
+    ]
+  },
+  "require": {
+    "nette/neon": "^3.4",
+    "nette/utils": "^4.0"
+  }
+}
