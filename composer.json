@@ -2,7 +2,7 @@
   "name": "dikki/clipro",
   "description": "A simple framework to build CLI applications with PHP",
   "version": "0.0.1",
-  "license": "GNU General Public License v3.0",
+  "license": "GNU General Public License v3.0 only",
   "homepage": "https://github.com/namankumar80510/clipro",
   "config": {
     "sort-packages": true,
