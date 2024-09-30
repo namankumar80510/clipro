@@ -1,6 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Commands;
+
+use Dikki\Clipro\Core\Commands\Base;
+use Dikki\Clipro\Core\Commands\CommandInterface;
 
 class SampleCommand extends Base implements CommandInterface
 {
@@ -16,8 +21,9 @@ class SampleCommand extends Base implements CommandInterface
      * @param array<mixed> $args
      * @return void
      */
-    public function execute(array $args): void
+    public function execute(array $args): int
     {
-        echo $this->color("This is a sample command...\n", "blue");
+        $this->cli->green("This is a sample command...\n");
+        return 0;
     }
 }

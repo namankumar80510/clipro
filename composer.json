@@ -4,8 +4,9 @@
   "type": "project",
   "homepage": "https://github.com/namankumar80510/clipro",
   "config": {
-    "sort-packages": true,
-    "preferred-install": "dist"
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
   },
   "autoload": {
     "psr-4": {
@@ -16,7 +17,6 @@
     ]
   },
   "require": {
-    "nette/neon": "^3.4",
-    "nette/utils": "^4.0"
+    "dikki/clipro-core": "^0.0.2"
   }
 }
